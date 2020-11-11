@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+</head>
+
+<body>
+
+    <div ng-app="myApp">
+        <div ng-controller="myCtrl">
+            <h4>Contact: </h4>
+            First Name: <input type="text" ng-model="firstName" /><br />
+            Last Name: <input type="text" ng-model="lastName" /><br />
+            <br>
+            Full Name: {{firstName + " " + lastName}}
+            <hr />
+            
+            <!-- Start of UI built by react -->
+            <app-button></app-button>
+            <!-- End of UI built by react -->
+        </div>
+    </div>
+
+    <script src="scripts/angularjs-index.js"></script>
+    
+    <!-- Start of react script -->
+    <script src="scripts/angular-scripts/angular-el-app/dist/angular-el-app/runtime.js" defer></script>
+    <script src="scripts/angular-scripts/angular-el-app/dist/angular-el-app/polyfills.js" defer></script>
+    <script src="scripts/angular-scripts/angular-el-app/dist/angular-el-app/styles.js" defer></script>
+    <script src="scripts/angular-scripts/angular-el-app/dist/angular-el-app/vendor.js" defer></script>
+    <script src="scripts/angular-scripts/angular-el-app/dist/angular-el-app/main.js" defer></script>
+    <!-- End of react script -->
+</body>
+
+</html>
