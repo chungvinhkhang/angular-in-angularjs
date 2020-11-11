@@ -2,6 +2,7 @@ After get source, run this script below to build dist js
 ```
 npm install -g @angular/cli
 cd angular-scripts/my-angular-app
+npm install
 npm run-script build
 ```
 
